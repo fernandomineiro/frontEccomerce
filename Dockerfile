@@ -1,6 +1,6 @@
 FROM node:16.20.2-buster-slim
 
-WORKDIR /src/app
+WORKDIR /app
 
 COPY package*.json ./
 
