@@ -61,7 +61,7 @@ class List extends React.PureComponent {
     return (
       <div className='order-dashboard'>
         <SubPage
-          title='Your Orders'
+          title='Suas vendas'
           actionTitle={user.role === ROLES.Admin && 'Customer Orders'}
           handleAction={() =>
             user.role === ROLES.Admin &&
@@ -92,7 +92,7 @@ class List extends React.PureComponent {
             </>
           )}
           {!isLoading && !displayOrders && (
-            <NotFound message='You have no orders yet.' />
+            <NotFound message='Você ainda não tem pedidos.' />
           )}
         </SubPage>
       </div>

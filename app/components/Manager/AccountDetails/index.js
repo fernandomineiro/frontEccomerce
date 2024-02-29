@@ -42,7 +42,7 @@ const AccountDetails = props => {
           <Col xs='12' md='6'>
             <Input
               type={'text'}
-              label={'First Name'}
+              label={'Primeiro nome'}
               name={'firstName'}
               placeholder={'Por favor entre com seu primeiro nome'}
               value={user.firstName ? user.firstName : ''}
@@ -54,7 +54,7 @@ const AccountDetails = props => {
           <Col xs='12' md='6'>
             <Input
               type={'text'}
-              label={'Last Name'}
+              label={'Ultimo nome'}
               name={'lastName'}
               placeholder={'Por favor entre com seu Ultimo nome'}
               value={user.lastName ? user.lastName : ''}
@@ -79,7 +79,7 @@ const AccountDetails = props => {
           <Col xs='12' md='12'>
             <Input
               type={'text'}
-              label={'Phone Number'}
+              label={'Telefone'}
               name={'phoneNumber'}
               placeholder={'Por favor entre com seu telefone'}
               value={user.phoneNumber ? user.phoneNumber : ''}
@@ -91,7 +91,7 @@ const AccountDetails = props => {
         </Row>
         <hr />
         <div className='profile-actions'>
-          <Button type='submit' variant='secondary' text='Save changes' />
+          <Button type='submit' variant='secondary' text='Salvar trocas' />
         </div>
       </form>
     </div>

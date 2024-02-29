@@ -21,7 +21,7 @@ const Footer = () => {
   const footerBusinessLinks = (
     <ul className='support-links'>
       <li className='footer-link'>
-        <Link to='/dashboard'>Account Details</Link>
+        <Link to='/dashboard'>Detallhes da conta</Link>
       </li>
       <li className='footer-link'>
         <Link to='/dashboard/orders'>Orders</Link>

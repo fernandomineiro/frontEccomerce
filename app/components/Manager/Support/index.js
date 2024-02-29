@@ -68,7 +68,7 @@ const Support = props => {
       if (selectedUser) {
         selectUser(selectedUser);
       } else {
-        const user_id = localStorage.getItem('selected_suport_chat');
+        const user_id = localStorage.getItem('selecionado_suport_chat');
         if (user_id) {
           const user = users.find(u => u.id === user_id);
           if (user) selectUser(user);
@@ -85,7 +85,7 @@ const Support = props => {
     setSelectedUser(user);
     const msgs = getUserMsgs(user);
     setActiveChat(msgs);
-    localStorage.setItem('selected_suport_chat', user.id);
+    localStorage.setItem('selecionado_suport_chat', user.id);
   };
 
   const getUserMsgs = user => {
@@ -144,11 +144,11 @@ const Support = props => {
               </Col>
             </Row>
           ) : (
-            <NotFound message='No users connected.' />
+            <NotFound message='Nenhum usuário conectado.' />
           )}
         </>
       ) : (
-        <NotFound message='Not connected.' />
+        <NotFound message='Não conectado' />
       )}
     </>
   );
